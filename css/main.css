@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  color: #2d2d2d;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #1a5f7a;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.topbar a {
+  color: #7dd8f8;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 20px;
+}
+
+.navbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  height: 30px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.navbar-links a {
+  font-size: 14px;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #006B99;
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-signin {
+  font-size: 14px;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.btn-demo {
+  background: #1a5f7a;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-demo:hover {
+  background: #155068;
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px 80px;
+}
+
+.hero-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  max-width: 420px;
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-hero-demo {
+  background: #1a5f7a;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-hero-demo:hover {
+  background: #155068;
+}
+
+.btn-learn {
+  font-size: 15px;
+  color: #1a5f7a;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-learn:hover {
+  text-decoration: underline;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 560px;
+  background: #dff0f7;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
