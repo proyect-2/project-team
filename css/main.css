@@ -1,3 +1,6 @@
+/* ================================================================
+   RESET & BASE
+   ================================================================ */
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +8,20 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
   background: #fff;
   color: #2d2d2d;
+  line-height: 1.6;
 }
 
-/* TOPBAR */
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #0f172a;
+}
+
+/* ================================================================
+   TOPBAR
+   ================================================================ */
 .topbar {
   background: #1a5f7a;
   text-align: center;
@@ -25,7 +36,9 @@ body {
   margin-left: 4px;
 }
 
-/* NAVBAR */
+/* ================================================================
+   NAVBAR
+   ================================================================ */
 .navbar {
   border-bottom: 1px solid #e8e8e8;
   padding: 0 20px;
@@ -65,7 +78,7 @@ body {
 }
 
 .navbar-links a:hover {
-  color: #006B99;
+  color: #006b99;
 }
 
 .navbar-right {
@@ -95,7 +108,9 @@ body {
   background: #155068;
 }
 
-/* HERO */
+/* ================================================================
+   HERO (index)
+   ================================================================ */
 .hero {
   padding: 60px 20px 80px;
 }
@@ -176,4 +191,372 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* ================================================================
+   BRANDS (otkir)
+   ================================================================ */
+.brands-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.brands-title {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.brands-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.brand-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ================================================================
+   CARDS (otkir)
+   ================================================================ */
+.cards-section {
+  padding: 40px 20px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  padding: 40px 30px;
+  border-radius: 4px;
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #475569;
+}
+
+.card-yellow { background-color: #fef08a; }
+.card-blue   { background-color: #cffafe; }
+.card-pink   { background-color: #fce7f3; }
+
+/* ================================================================
+   FEATURES ACCORDION (otkir)
+   ================================================================ */
+.features-section {
+  background-color: #f8fafc;
+  padding: 80px 20px;
+}
+
+.features-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.features-text h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.accordion {
+  border-top: 1px solid #e2e8f0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+}
+
+.accordion-header i {
+  color: #94a3b8;
+}
+
+.accordion-header span i {
+  margin-right: 10px;
+  color: #3b82f6;
+}
+
+.accordion-content {
+  padding-bottom: 15px;
+  font-size: 14px;
+  color: #64748b;
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* ================================================================
+   DETAILS (otkir)
+   ================================================================ */
+.details-section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 8px solid #0284c7;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.details-title-box h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.detail-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.detail-item p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.detail-icon {
+  font-size: 20px;
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+/* ================================================================
+   CTA SECTION (shokir - .hero qayta nomlandi)
+   ================================================================ */
+.cta-section {
+  background: #006aa8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 10%;
+}
+
+.cta-img img {
+  width: 350px;
+}
+
+.cta-text {
+  max-width: 450px;
+}
+
+.cta-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-text ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.cta-text li {
+  margin: 10px 0;
+}
+
+.btn-outline {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 12px 25px;
+  display: inline-block;
+}
+
+/* ================================================================
+   AUTOMATION FEATURES (shokir - .features qayta nomlandi)
+   ================================================================ */
+.features-auto {
+  padding: 80px 10%;
+}
+
+.features-auto h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 50px;
+  color: #555;
+}
+
+.feature-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.box h3 {
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================================================================
+   BLOG (shokir)
+   ================================================================ */
+.blog {
+  padding: 80px 10%;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.blog-header h2 {
+  font-size: 42px;
+}
+
+.blog-header a {
+  color: #1a5f7a;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.blog-header a:hover {
+  text-decoration: underline;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Blog kartochkalari .cards-section .card bilan to'qnashmasligi uchun aniq selektor */
+.blog-cards .card {
+  background: white;
+  padding: 0;
+  border-radius: 0;
+}
+
+.blog-cards .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-cards .card h3 {
+  font-size: 18px;
+  margin: 15px 0 8px;
+}
+
+.blog-cards .card p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+@media (max-width: 1024px) {
+  .feature-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .accordion-header {
+    text-align: left;
+  }
+
+  .features-image {
+    margin-top: 40px;
+  }
+
+  .cta-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .cta-img img {
+    width: 250px;
+  }
+
+  .feature-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
 }
